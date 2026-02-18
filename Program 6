@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int hours, gender;
+    float salary = 0;
+
+    printf("Enter hours worked: ");
+    scanf("%d", &hours);
+
+    printf("Enter gender (1-Male, 2-Female): ");
+    scanf("%d", &gender);
+
+    if (hours <= 8) {
+        if (gender == 1)
+            salary = hours * 80;
+        else
+            salary = hours * 60;
+    }
+    else {
+        if (gender == 1)
+            salary = (8 * 80) + ((hours - 8) * 100);
+        else
+            salary = (8 * 60) + ((hours - 8) * 100);
+    }
+
+    printf("Total Salary = Rs. %.2f", salary);
+
+    return 0;
+}
