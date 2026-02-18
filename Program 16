@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int choice;
+
+    printf("1. Dairy Milk\n");
+    printf("2. KitKat\n");
+    printf("3. Five Star\n");
+    printf("4. Snickers\n");
+
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    switch(choice) {
+        case 1: printf("You selected Dairy Milk"); break;
+        case 2: printf("You selected KitKat"); break;
+        case 3: printf("You selected Five Star"); break;
+        case 4: printf("You selected Snickers"); break;
+        default: printf("Invalid Choice");
+    }
+
+    return 0;
+}
