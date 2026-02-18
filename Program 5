@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int steps, minutes;
+
+    printf("Enter steps taken: ");
+    scanf("%d", &steps);
+
+    printf("Enter time taken (minutes): ");
+    scanf("%d", &minutes);
+
+    if (steps >= 10000 && minutes <= 60)
+        printf("Excellent Fitness");
+    else if (steps >= 7000)
+        printf("Good Fitness");
+    else if (steps >= 4000)
+        printf("Average Fitness");
+    else
+        printf("Poor Fitness");
+
+    return 0;
+}
