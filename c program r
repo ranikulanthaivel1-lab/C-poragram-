@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+    int m;
+    scanf("%d",&m);
+if((m=1)||(m=3)||(m=5)||(m=7)||(m=8)||(m=10)||(m=12))
+{
+ printf("number of days 31\n");
+}
+else if((m=4)||(m=6)||(m=9)||(m=11))
+{
+    printf("number of days 30\n");
+}
+else if(m=2)
+{
+    printf("number of days 28\n");
+}
+if(m>=1&&m<=3)
+{
+ printf(" first quadrant");
+}
+else if(m>=4&&m<=6)
+{
+ printf("second quadrant");
+}
+else if(m>=7&&m<9)
+{
+ printf("third quadrant");
+}
+ else if (m>=10&&m<=12)
+ {
+ printf("foruth quadrant");
+ }
+ else
+ {
+     printf("number is not value");
+ }
+ return 0;
+}
+ 
+ 
